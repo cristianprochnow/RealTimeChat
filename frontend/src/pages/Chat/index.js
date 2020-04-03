@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaGlobe, FaSms, FaUserCircle } from 'react-icons/fa';
+import {
+  FaGlobe, FaSms, FaUserCircle, FaPaperPlane, FaEnvelope,
+} from 'react-icons/fa';
 
 import './styles.css';
 
@@ -9,13 +11,14 @@ export default function Chat() {
       <div className="chat-container">
         <section className="user-box">
           <h1>
-            Real Time Chat &nbsp;
+            Real Time Chat
+            &nbsp;
             <FaSms color="#FF9F1C" size={30} />
           </h1>
 
           <div>
             <FaGlobe color="#39B54A" size={18} />
-            <strong>Usuários Online (20)</strong>
+            <strong>Usuários Online (3)</strong>
 
             <p>
               <FaUserCircle color="#FFFFFF" size={15} />
@@ -25,7 +28,7 @@ export default function Chat() {
             <p>
               <FaUserCircle color="#FFFFFF" size={15} />
               &nbsp;
-              Carlos Alberto ajsndjkasndksa nasjdknasjkd nasjkdnasd nkijasdnd
+              Carlos Alberto
             </p>
             <p>
               <FaUserCircle color="#FFFFFF" size={15} />
@@ -43,30 +46,63 @@ export default function Chat() {
         <main className="message-box">
           <div>
             <span>
-              <strong>Autor</strong>
-              <p>Mensagem show pacaramba</p>
+              <strong>
+                <FaEnvelope color="#FF9F1C" size={15} />
+                &nbsp;
+                Autor
+              </strong>
+              <p>
+                Mensagem show demais auhduas uhdua uahd asdh saudhasd sadhuad
+              </p>
             </span>
 
             <span>
-              <strong>Autor</strong>
-              <p>Mensagem show pacaramba</p>
+              <strong>
+                <FaEnvelope color="#FF9F1C" size={15} />
+                &nbsp;
+                Autor
+              </strong>
+              <p>
+                Mensagem show demais auhduas uhdua uahd asdh saudhasd sadhuad
+              </p>
             </span>
 
             <span>
-              <strong>Autor</strong>
-              <p>Mensagem show pacaramba</p>
+              <strong>
+                <FaEnvelope color="#FF9F1C" size={15} />
+                &nbsp;
+                Autor
+              </strong>
+              <p>
+                Mensagem show demais auhduas uhdua uahd asdh saudhasd sadhuad
+              </p>
             </span>
 
             <span>
-              <strong>Autor</strong>
-              <p>Mensagem show pacaramba</p>
+              <strong>
+                <FaEnvelope color="#FF9F1C" size={15} />
+                &nbsp;
+                Autor
+              </strong>
+              <p>
+                Mensagem show demais auhduas uhdua uahd asdh saudhasd sadhuad
+              </p>
             </span>
           </div>
 
-          <input
-            type="text"
-            placeholder="Digite sua mensagem"
-          />
+          <form
+            onSubmit={(event) => {
+              event.preventDefault();
+            }}
+          >
+            <input
+              type="text"
+              placeholder="Digite sua mensagem..."
+            />
+            <button type="submit">
+              <FaPaperPlane color="#FFFFFF" size={30} />
+            </button>
+          </form>
         </main>
       </div>
     </>
