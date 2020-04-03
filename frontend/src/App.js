@@ -9,7 +9,5 @@ import './global.css';
 export default function App() {
   socket.connect();
 
-  return(
-    <Chat />
-  );
+  return <Chat />;
 }

@@ -1,62 +1,73 @@
 import React from 'react';
+import { FaGlobe, FaSms, FaUserCircle } from 'react-icons/fa';
 
 import './styles.css';
 
 export default function Chat() {
-  return(
+  return (
     <>
       <div className="chat-container">
-        <form onSubmit={() => {}}>
+        <section className="user-box">
+          <h1>
+            Real Time Chat &nbsp;
+            <FaSms color="#FF9F1C" size={30} />
+          </h1>
+
+          <div>
+            <FaGlobe color="#39B54A" size={18} />
+            <strong>Usuários Online (20)</strong>
+
+            <p>
+              <FaUserCircle color="#FFFFFF" size={15} />
+              &nbsp;
+              Algusto Alberto
+            </p>
+            <p>
+              <FaUserCircle color="#FFFFFF" size={15} />
+              &nbsp;
+              Carlos Alberto ajsndjkasndksa nasjdknasjkd nasjkdnasd nkijasdnd
+            </p>
+            <p>
+              <FaUserCircle color="#FFFFFF" size={15} />
+              &nbsp;
+              Sara Menezes
+            </p>
+          </div>
+
           <input
             type="text"
-            placeholder="Insira seu nome"
-            maxLength="40"
+            placeholder="Insira seu nome..."
           />
+        </section>
 
-          <section className="chat">
-            <div className="chat-item">
-              <strong>Autor da mensagem</strong>
-              <p>Mensagem show da peasdasdasdasdasdsaddasdassdassoasdasdasddasa, que ela acabou de enviar, pra testar o negócio.</p>
-            </div>
+        <main className="message-box">
+          <div>
+            <span>
+              <strong>Autor</strong>
+              <p>Mensagem show pacaramba</p>
+            </span>
 
-            <div className="chat-item">
-              <strong>Autor da mensagem</strong>
-              <p>Mensagem show da peasdasdasdasdasdsaddasdassdassoasdasdasddasa, que ela acabou de enviar, pra testar o negócio.</p>
-            </div>
+            <span>
+              <strong>Autor</strong>
+              <p>Mensagem show pacaramba</p>
+            </span>
 
-            <div className="chat-item">
-              <strong>Autor da mensagem</strong>
-              <p>Mensagem show da peasdasdasdasdasdsaddasdassdassoasdasdasddasa, que ela acabou de enviar, pra testar o negócio.</p>
-            </div>
+            <span>
+              <strong>Autor</strong>
+              <p>Mensagem show pacaramba</p>
+            </span>
 
-            <div className="chat-item">
-              <strong>Autor da mensagem</strong>
-              <p>Mensagem show da peasdasdasdasdasdsaddasdassdassoasdasdasddasa, que ela acabou de enviar, pra testar o negócio.</p>
-            </div>
+            <span>
+              <strong>Autor</strong>
+              <p>Mensagem show pacaramba</p>
+            </span>
+          </div>
 
-            <div className="chat-item">
-              <strong>Autor da mensagem</strong>
-              <p>Mensagem show da peasdasdasdasdasdsaddasdassdassoasdasdasddasa, que ela acabou de enviar, pra testar o negócio.</p>
-            </div>
-
-            <div className="chat-item">
-              <strong>Autor da mensagem</strong>
-              <p>Mensagem show da peasdasdasdasdasdsaddasdassdassoasdasdasddasa, que ela acabou de enviar, pra testar o negócio.</p>
-            </div>
-
-            <div className="chat-item">
-              <strong>Autor da mensagem</strong>
-              <p>Mensagem show da peasdasdasdasdasdsaddasdassdassoasdasdasddasa, que ela acabou de enviar, pra testar o negócio.</p>
-            </div>
-          </section>
-
-          <input 
+          <input
             type="text"
             placeholder="Digite sua mensagem"
           />
-
-          <button type="submit">Enviar</button>
-        </form>
+        </main>
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner,
@@ -11,9 +11,33 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  border-radius: 30px;
   border: none;
-  background-color: #53D8FB;
+  background-color: var(--secundary-orange);
+}
+
+::placeholder {
+  color: var(--light-base);
+}
+
+:-ms-input-placeholder {
+  color: var(--light-base);
+}
+
+::-ms-input-placeholder {
+  color: var(--light-base);
+}
+
+:root {
+  --primary-orange: #FF9F1C;
+  --secundary-orange: #FFBF69;
+
+  --dark-gray: #474747;
+  --light-gray: #D4D4D4;
+
+  --light-base: #FFFFFF;
+
+  --font: 'Oswald', sans-serif;
 }
 
 * {
@@ -24,10 +48,10 @@
 }
 
 body {
-  background: #F3F3F3;
-  font: 400 14px Roboto, sans-serif;
+  background: var(--light-base);
+  font-family: var(--font);
 }
 
 input, button {
-  font: 400 16px Roboto, sans-serif;
+  font-family: var(--font);
 }
