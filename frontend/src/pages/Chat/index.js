@@ -1,11 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
-  FaGlobe, FaSms, FaUserCircle, FaPaperPlane, FaEnvelope,
+  FaGlobe, FaSms, FaUserCircle, FaPaperPlane, FaEnvelope, FaPowerOff,
 } from 'react-icons/fa';
+import { useHistory } from 'react-router-dom';
+
+import crypto from 'crypto';
+
+import socket from '../../services/socket';
 
 import './styles.css';
 
 export default function Chat() {
+  const [onlineUsers, setOnlineUsers] = useState([]);
+  const [messages, setMessages] = useState([]);
+  const [username, setUsername] = useState('');
+  const [message, setMessage] = useState('');
+  const [userColor, setUserColor] = useState('');
+  const history = useHistory();
+
+  socket.on('newConnection', (connections) => {
+    setOnlineUsers(connections);
+  });
+
+  socket.on('receivedMessage', (messageData) => {
+    setMessages(messageData);
+  });
+
+  socket.on('userHaveBeenDisconnected', (connections) => {
+    setOnlineUsers(connections);
+  });
+
+  useEffect(() => {
+    socket.connect();
+
+    socket.on('previousConnections', (connections) => {
+      setOnlineUsers(connections);
+    });
+
+    socket.on('previousMessages', (messageData) => {
+      setMessages(messageData);
+    });
+
+    setUserColor(`#${crypto.randomBytes(3).toString('HEX')}`);
+  }, []);
+
   return (
     <>
       <div className="chat-container">
@@ -18,86 +56,95 @@ export default function Chat() {
 
           <div>
             <FaGlobe color="#39B54A" size={18} />
-            <strong>Usuários Online (3)</strong>
+            <strong>
+              Outros Usuários Online (
+              {onlineUsers.length}
+              )
+            </strong>
 
-            <p>
-              <FaUserCircle color="#FFFFFF" size={15} />
-              &nbsp;
-              Algusto Alberto
-            </p>
-            <p>
-              <FaUserCircle color="#FFFFFF" size={15} />
-              &nbsp;
-              Carlos Alberto
-            </p>
-            <p>
-              <FaUserCircle color="#FFFFFF" size={15} />
-              &nbsp;
-              Sara Menezes
-            </p>
+            {onlineUsers.map((connection) => (
+              <p>
+                <FaUserCircle color="#FFFFFF" size={15} />
+                &nbsp;
+                {`#${connection.id}`}
+              </p>
+            ))}
           </div>
 
           <input
             type="text"
-            placeholder="Insira seu nome..."
+            placeholder="Como deseja ser chamado?"
+            value={username}
+            onChange={(event) => {
+              setUsername(event.target.value);
+            }}
           />
         </section>
 
         <main className="message-box">
           <div>
-            <span>
-              <strong>
-                <FaEnvelope color="#FF9F1C" size={15} />
-                &nbsp;
-                Autor
-              </strong>
-              <p>
-                Mensagem show demais auhduas uhdua uahd asdh saudhasd sadhuad
-              </p>
-            </span>
-
-            <span>
-              <strong>
-                <FaEnvelope color="#FF9F1C" size={15} />
-                &nbsp;
-                Autor
-              </strong>
-              <p>
-                Mensagem show demais auhduas uhdua uahd asdh saudhasd sadhuad
-              </p>
-            </span>
-
-            <span>
-              <strong>
-                <FaEnvelope color="#FF9F1C" size={15} />
-                &nbsp;
-                Autor
-              </strong>
-              <p>
-                Mensagem show demais auhduas uhdua uahd asdh saudhasd sadhuad
-              </p>
-            </span>
-
-            <span>
-              <strong>
-                <FaEnvelope color="#FF9F1C" size={15} />
-                &nbsp;
-                Autor
-              </strong>
-              <p>
-                Mensagem show demais auhduas uhdua uahd asdh saudhasd sadhuad
-              </p>
-            </span>
+            {messages.map((messageData) => (
+              <span
+                key={messageData.id}
+                style={messageData.userId === socket.id ? { marginLeft: 'auto' } : { marginRight: 'auto' }}
+              >
+                <strong style={{ color: messageData.color }}>
+                  <FaEnvelope color={messageData.color} size={15} />
+                  &nbsp;
+                  {messageData.username}
+                  <code style={{
+                    fontSize: 10,
+                    marginLeft: 5,
+                  }}
+                  >
+                    #
+                    {messageData.userId}
+                  </code>
+                </strong>
+                <p>{messageData.message}</p>
+              </span>
+            ))}
           </div>
 
           <form
             onSubmit={(event) => {
               event.preventDefault();
+
+              if (username.length && message.length) {
+                const messageData = {
+                  userId: socket.id,
+                  color: userColor,
+                  username,
+                  message,
+                };
+
+                setMessages([...messages, messageData]);
+
+                socket.emit('newMessage', messageData);
+
+                setMessage('');
+              }
             }}
           >
+            <button
+              type="button"
+              onClick={() => {
+                socket.emit('userDisconnected', { id: socket.id });
+
+                socket.disconnect();
+
+                history.goBack();
+              }}
+            >
+              <FaPowerOff color="#FFFFFF" size={30} />
+            </button>
             <input
               type="text"
               placeholder="Digite sua mensagem..."
+              value={message}
+              onChange={(event) => {
+                setMessage(event.target.value);
+              }}
             />
             <button type="submit">
               <FaPaperPlane color="#FFFFFF" size={30} />
