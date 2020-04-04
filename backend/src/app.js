@@ -18,9 +18,7 @@ const connections = []
 const messages = []
 
 io.on('connection', socket => {
-  const { color } = socket.handshake.query
-
-  const connectionInformation = { id: socket.id, color }
+  const connectionInformation = { id: socket.id }
   connections.push(connectionInformation)
 
   socket.emit('previousConnections', connections)
