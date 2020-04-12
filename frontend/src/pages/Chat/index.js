@@ -51,11 +51,11 @@ export default function Chat() {
           <h1>
             Real Time Chat
             &nbsp;
-            <FaSms color="#FF9F1C" size={30} />
+            <FaSms color="#FF9F1C" />
           </h1>
 
           <div>
-            <FaGlobe color="#39B54A" size={18} />
+            <FaGlobe color="#39B54A" />
             <strong>
               Outros Usuários Online (
               {onlineUsers.length}
@@ -64,7 +64,7 @@ export default function Chat() {
 
             {onlineUsers.map((connection) => (
               <p>
-                <FaUserCircle color="#FFFFFF" size={15} />
+                <FaUserCircle color="#FFFFFF" />
                 &nbsp;
                 {`#${connection.id}`}
               </p>
@@ -89,7 +89,7 @@ export default function Chat() {
                 style={messageData.userId === socket.id ? { marginLeft: 'auto' } : { marginRight: 'auto' }}
               >
                 <strong style={{ color: messageData.color }}>
-                  <FaEnvelope color={messageData.color} size={15} />
+                  <FaEnvelope color={messageData.color} />
                   &nbsp;
                   {messageData.username}
                   <code style={{
