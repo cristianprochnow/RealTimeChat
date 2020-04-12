@@ -40,7 +40,7 @@
 <br />
 
 <!-- TABLE OF CONTENTS -->
-<h2>Table of Contents</h2>
+<h2>:page_facing_up: Table of Contents</h2>
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
