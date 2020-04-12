@@ -48,11 +48,9 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 <br />
 
@@ -177,5 +175,5 @@ Project Link: [https://github.com/cristianprochnow/RealTimeChat](https://github.
 [code-size-shield]: https://img.shields.io/github/languages/code-size/cristianprochnow/RealTimeChat
 [code-size-url]: https://github.com/cristianprochnow/RealTimeChat
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=0077b4
-[linkedin-url]: www.linkedin.com/in/cristianprochnow
+[linkedin-url]: https://www.linkedin.com/in/cristianprochnow
 [product-screenshot]: assets/notebook-chat-screen.png
