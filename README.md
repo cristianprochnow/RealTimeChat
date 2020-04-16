@@ -10,8 +10,6 @@
     <a href="https://github.com/cristianprochnow/RealTimeChat"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/cristianprochnow/RealTimeChat">View Demo</a>
-    ·
     <a href="https://github.com/cristianprochnow/RealTimeChat/issues">Report Bug</a>
     ·
     <a href="https://github.com/cristianprochnow/RealTimeChat/issues">Request Feature</a>
