@@ -196,3 +196,4 @@ Project Link: [https://github.com/cristianprochnow/Synchat](https://github.com/c
 [code-size-url]: https://github.com/cristianprochnow/Synchat
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=0077b4
 [linkedin-url]: https://www.linkedin.com/in/cristianprochnow
+[product-screenshot]: assets/notebook-chat-screen.png
