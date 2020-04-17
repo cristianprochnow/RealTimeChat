@@ -17,13 +17,6 @@
 </p>
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 <div align="center">
 
   [![Contributors][contributors-shield]][contributors-url]
@@ -156,7 +149,7 @@ It's simple. First, start typing the name that you wish in the `username field`.
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. 🍴 Fork the Project
-2. 👯 Clone this project (`git clone https://github.com/cristianprochnow/BeTheHero.git`)
+2. 👯 Clone this project (`git clone https://github.com/cristianprochnow/Synchat.git`)
 3. 🔀 Create your Feature Branch (`git checkout -b my-feature`)
 4. ✔️ Commit your Changes (`git commit -m 'feat: My new feature'`)
 5. 📌 Push to the Branch (`git push origin my-feature`)
@@ -196,4 +189,3 @@ Project Link: [https://github.com/cristianprochnow/Synchat](https://github.com/c
 [code-size-url]: https://github.com/cristianprochnow/Synchat
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=0077b4
 [linkedin-url]: https://www.linkedin.com/in/cristianprochnow
-[product-screenshot]: assets/notebook-chat-screen.png
