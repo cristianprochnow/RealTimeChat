@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <a href="https://github.com/cristianprochnow/Synchat">
-    <img src=".github/logo.png" alt="Logo" width="400">
+    <img src=".github/logo.png" alt="Logo" width="300">
   </a>
 
   <p align="center">
