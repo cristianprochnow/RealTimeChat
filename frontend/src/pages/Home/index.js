@@ -9,7 +9,7 @@ export default function Home() {
     <div className="container">
       <header>
         <h1>
-          Real Time Chat
+          Synchat
           &nbsp;
           <FaSms color="#FFF" />
         </h1>

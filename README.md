@@ -1,18 +1,18 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://github.com/cristianprochnow/RealTimeChat">
-    <img src="assets/logo.png" alt="Logo" width="450">
+  <a href="https://github.com/cristianprochnow/Synchat">
+    <img src=".github/logo.png" alt="Logo" width="400">
   </a>
 
   <p align="center">
     A simple and practical web chat.
     <br />
-    <a href="https://github.com/cristianprochnow/RealTimeChat"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/cristianprochnow/Synchat"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/cristianprochnow/RealTimeChat/issues">Report Bug</a>
+    <a href="https://github.com/cristianprochnow/Synchat/issues">Report Bug</a>
     ·
-    <a href="https://github.com/cristianprochnow/RealTimeChat/issues">Request Feature</a>
+    <a href="https://github.com/cristianprochnow/Synchat/issues">Request Feature</a>
   </p>
 </p>
 
@@ -38,7 +38,7 @@
 <br />
 
 <!-- TABLE OF CONTENTS -->
-<h2>Table of Contents</h2>
+<h2>📚 Table of Contents</h2>
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
@@ -53,13 +53,26 @@
 <br />
 
 <!-- ABOUT THE PROJECT -->
-<h2 id="about-the-project">About The Project</h2>
+<h2 id="about-the-project">📖 About The Project</h2>
 
 <div align="center">
-
-  [![Product Name Screen Shot][product-screenshot]](https://github.com/cristianprochnow/RealTimeChat)
-
+  <a href="./.github/notebook-home-screen.png">
+    <img
+      src="./.github/notebook-home-screen.png"
+      alt="Synchat Home Screen"
+      width="300"
+    />
+  </a>
+  <a href="./.github/notebook-chat-without-name.png">
+    <img
+      src="./.github/notebook-chat-without-name.png"
+      alt="Synchat Chat Screen"
+      width="300"
+    />
+  </a>
 </div>
+
+<br />
 
 Since I started to programming with JavaScript, the real time interactions of this language impress me. And then, I met with a technology like `websocket.js`, that encouraged me to make this chat.
 
@@ -69,7 +82,7 @@ Here's why:
 
 
 
-<h3 id="built-with">Built With</h3>
+<h3 id="built-with">🔧 Built With</h3>
 
 * [React](https://github.com/facebook/react)
 * [Express](https://github.com/expressjs/express)
@@ -78,21 +91,18 @@ Here's why:
 <br />
 
 <!-- GETTING STARTED -->
-<h2 id="getting-started">Getting Started</h2>
+<h2 id="getting-started">🚀 Getting Started</h2>
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-<h3 id="prerequisites">Prerequisites</h3>
+<h3 id="prerequisites">📝 Prerequisites</h3>
 
 * [Node.js](https://nodejs.org/en/download/package-manager/)
 
-<h3 id="installation">Installation</h3>
+<h3 id="installation">⚙️ Installation</h3>
 
 1. Clone this repository
 
 ```sh
-  git clone https://github.com/cristianprochnow/RealTimeChat.git
+  git clone https://github.com/cristianprochnow/Synchat.git
 ```
 
 2. Install all the packages and dependencies
@@ -120,9 +130,20 @@ To get a local copy up and running follow these simple example steps.
 <br />
 
 <!-- USAGE EXAMPLES -->
-<h2 id="usage">Usage</h2>
+<h2 id="usage">💡 Usage</h2>
 
 It's simple. First, start typing the name that you wish in the `username field`. And then, enjoy the chat sending messages, typing several types of text in `message field`.
+
+<div align="center">
+  <a href="./.github/notebook-chat-with-name.png">
+    <img
+      src="./.github/notebook-chat-with-name.png"
+      alt="Synchat Chat Screen"
+    />
+  </a>
+</div>
+
+<br />
 
 > Open other tabs of browser with the same address (`http://localhost:3000`) to see chat in action
 
@@ -130,48 +151,49 @@ It's simple. First, start typing the name that you wish in the `username field`.
 <br />
 
 <!-- CONTRIBUTING -->
-<h2 id="contributing">Contributing</h2>
+<h2 id="contributing">🔗 Contributing</h2>
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. 🍴 Fork the Project
+2. 👯 Clone this project (`git clone https://github.com/cristianprochnow/BeTheHero.git`)
+3. 🔀 Create your Feature Branch (`git checkout -b my-feature`)
+4. ✔️ Commit your Changes (`git commit -m 'feat: My new feature'`)
+5. 📌 Push to the Branch (`git push origin my-feature`)
+6. 🔁 Open a Pull Request
 
 <br />
 
 <!-- LICENSE -->
-<h2 id="license">License</h2>
+<h2 id="license">📜 License</h2>
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <br />
 
 <!-- CONTACT -->
-<h2 id="contact">Contact</h2>
+<h2 id="contact">📞 Contact</h2>
 
 Cristian Prochnow - [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Project Link: [https://github.com/cristianprochnow/RealTimeChat](https://github.com/cristianprochnow/RealTimeChat)
+Project Link: [https://github.com/cristianprochnow/Synchat](https://github.com/cristianprochnow/Synchat)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/cristianprochnow/RealTimeChat.svg?style=flat
-[contributors-url]: https://github.com/cristianprochnow/RealTimeChat/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/cristianprochnow/RealTimeChat.svg?style=flat
-[forks-url]: https://github.com/cristianprochnow/RealTimeChat/network/members
-[stars-shield]: https://img.shields.io/github/stars/cristianprochnow/RealTimeChat.svg?style=flat
-[stars-url]: https://github.com/cristianprochnow/RealTimeChat/stargazers
-[issues-shield]: https://img.shields.io/github/issues/cristianprochnow/RealTimeChat.svg?style=flat
-[issues-url]: https://github.com/cristianprochnow/RealTimeChat/issues
-[license-shield]: https://img.shields.io/github/license/cristianprochnow/RealTimeChat.svg?style=flat
-[license-url]: https://github.com/cristianprochnow/RealTimeChat/blob/master/LICENSE.txt
-[repo-size-shield]: https://img.shields.io/github/repo-size/cristianprochnow/RealTimeChat.svg?style=flat
-[repo-size-url]: https://github.com/cristianprochnow/RealTimeChat
-[code-size-shield]: https://img.shields.io/github/languages/code-size/cristianprochnow/RealTimeChat
-[code-size-url]: https://github.com/cristianprochnow/RealTimeChat
+[contributors-shield]: https://img.shields.io/github/contributors/cristianprochnow/Synchat.svg?style=flat
+[contributors-url]: https://github.com/cristianprochnow/Synchat/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/cristianprochnow/Synchat.svg?style=flat
+[forks-url]: https://github.com/cristianprochnow/Synchat/network/members
+[stars-shield]: https://img.shields.io/github/stars/cristianprochnow/Synchat.svg?style=flat
+[stars-url]: https://github.com/cristianprochnow/Synchat/stargazers
+[issues-shield]: https://img.shields.io/github/issues/cristianprochnow/Synchat.svg?style=flat
+[issues-url]: https://github.com/cristianprochnow/Synchat/issues
+[license-shield]: https://img.shields.io/github/license/cristianprochnow/Synchat.svg?style=flat
+[license-url]: https://github.com/cristianprochnow/Synchat/blob/master/LICENSE.txt
+[repo-size-shield]: https://img.shields.io/github/repo-size/cristianprochnow/Synchat.svg?style=flat
+[repo-size-url]: https://github.com/cristianprochnow/Synchat
+[code-size-shield]: https://img.shields.io/github/languages/code-size/cristianprochnow/Synchat
+[code-size-url]: https://github.com/cristianprochnow/Synchat
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=0077b4
 [linkedin-url]: https://www.linkedin.com/in/cristianprochnow
 [product-screenshot]: assets/notebook-chat-screen.png

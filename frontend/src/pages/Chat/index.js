@@ -49,7 +49,7 @@ export default function Chat() {
       <div className="chat-container">
         <section className="user-box">
           <h1>
-            Real Time Chat
+            Synchat
             &nbsp;
             <FaSms color="#FF9F1C" />
           </h1>
